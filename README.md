@@ -9,7 +9,7 @@ After CROPping your data set, you can directly continue with statistical pre-pro
 ***
 
 ### Usage
-```CROP(data="example_data.csv", name="project_name", ccth=0.75, rtw=0.02, maxrtw = NULL,  mcs=100, rtunit="min", funit="MW")```
+```CROP(data="example_data.csv", name="project1", ccth=0.75, rtw=0.02, maxrtw = 0.04,  mcs=100, rtunit="min", funit="MW")```
 
 ### Parameters
 * __`ccth`__
