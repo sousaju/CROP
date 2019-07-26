@@ -30,7 +30,8 @@ CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual p
 * `mcs`
 
             maximal allowed cluster size
-            should not be set high; if default is not enough, rather consider setting `ccth` bigger and/or `rtw` smaller than changing `mcs` 
+            should not be set high; if default is not enough, rather consider setting `ccth` bigger 
+and/or `rtw` smaller than changing `mcs` 
             default: `mcs = 100`
 
 * `data`
