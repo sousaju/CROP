@@ -3,7 +3,7 @@ R-script for paper **CROP: Correlation-based reduction of feature multiplicities
 ***
 
 CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual post-processing tool that removes redundant features from untargeted metabolomic data sets. It is based on a grouping of highly correlated features within a defined retention time (RT) window. Graphical representation of correlation network for better understanding and parameter tuning is provided.
-![Ilustrace datasetu iris.](iris.png)
+![CROPped example data - correlation network](example_data_CROPped_ccth_0.75_rtw+-0.02_correlation_network.pdf)
 ***
 
 ### Usage
@@ -18,11 +18,11 @@ CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual p
             default: `funit = "MW"`
 
 `maxrtw`... maximal allowed RT window to color stretched clusters phenomenon
-            recommended to set as max 2\*rtw
+            recommended to set as max `2\*rtw`
             default: `maxrtw = NULL`
 
 `mcs` ... maximal allowed cluster size
-            should not be set high; if default is not enough, rather consider setting ccth bigger and/or rtw smaller than changing mcs
+            should not be set high; if default is not enough, rather consider setting `ccth` bigger and/or `rtw` smaller than changing `mcs`
             default: `mcs = 100`
 
 `data` ... filepath to an input csv table of your MS data with:
