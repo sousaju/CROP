@@ -11,7 +11,6 @@ CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual p
 
 ### Parameters
 * `ccth`
-
             threshold for correlation coefficient values
             default: `ccth = 0.75`
 
