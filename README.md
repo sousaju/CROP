@@ -12,9 +12,8 @@ CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual p
 ### Parameters
 * `ccth`
 
-threshold for correlation coefficient values
-
-default: `ccth = 0.75`
+            threshold for correlation coefficient values
+            default: `ccth = 0.75`
 
 * `funit` ... units in which your features are measured ("MW", "m/z" or anything else)
 
