@@ -10,9 +10,11 @@ CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual p
 ```CROP(data="example_data.csv", name="project_name", ccth=0.75, rtw=0.02, maxrtw = NULL,  mcs=100, rtunit="min", funit="MW")```
 
 ### Parameters
-* `ccth` ... threshold for correlation coefficient values
+* `ccth`
 
-            default: `ccth = 0.75`
+threshold for correlation coefficient values
+
+default: `ccth = 0.75`
 
 * `funit` ... units in which your features are measured ("MW", "m/z" or anything else)
 
