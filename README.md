@@ -4,10 +4,12 @@ R-script for paper **CROP: Correlation-based reduction of feature multiplicities
 
 CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual post-processing tool that removes redundant features from untargeted metabolomic data sets. It is based on a grouping of highly correlated features within a defined retention time (RT) window. Graphical representation of correlation network for better understanding and parameter tuning is provided.
 ![CROPped example data - correlation network](example_data_CROPped_ccth_0.75_rtw+-0.02_correlation_network.pdf)
+
+After CROPping your data set, you can directly continue with statistical pre-processing and analysis using our package [Metabol](https://github.com/AlzbetaG/Metabol).
 ***
 
 ### Usage
-```CROP(data="example_data.csv", name="project_name", ccth=0.75, rtw=0.02, maxrtw = NULL,  mcs=100, rtunit="min", funit="MW")```
+```CROP(data="example_data.csv", name="project1", ccth=0.75, rtw=0.02, maxrtw = 0.04,  mcs=100, rtunit="min", funit="MW")```
 
 ### Parameters
 * __`ccth`__
