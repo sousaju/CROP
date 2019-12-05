@@ -18,7 +18,7 @@ After CROPping your data set, you can directly continue with statistical pre-pro
 * __`ccth`__
 
             threshold for correlation coefficient values
-            default: ccth = 0.75
+            *default*: ccth = 0.75
 
 * __`funit`__
             
@@ -29,7 +29,7 @@ After CROPping your data set, you can directly continue with statistical pre-pro
 * __`maxrtw`__
 
             maximal allowed retention time window to color stretched clusters phenomenon
-            recommended to set as max 2*rtw
+            recommended to start with 2*rtw (higher number equals milder condition)
             default: maxrtw = NULL
 
 * __`mcs`__
