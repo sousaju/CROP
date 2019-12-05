@@ -1,5 +1,5 @@
 # CROP
-R-script for paper **CROP: Correlation-based reduction of feature multiplicities in untargeted metabolomic data** (S. Kouril, J. Rendlova, J. Vaclavik, D. Friedecky and T. Adam; *submitted*)
+R-script for paper **CROP: Correlation-based reduction of feature multiplicities in untargeted metabolomic data** (\v{S}. Kouril, J. Rendlova, J. Vaclavik, D. Friedecky and T. Adam; *submitted*)
 ***
 
 CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual post-processing tool that removes redundant features from untargeted metabolomic data sets. It is based on a grouping of highly correlated features within a defined retention time window. Graphical representation of correlation network for better understanding of the clusters composition and parameter tuning is provided.
@@ -18,7 +18,7 @@ After CROPping your data set, you can directly continue with statistical pre-pro
 * __`ccth`__
 
             threshold for correlation coefficient values
-            *default*: ccth = 0.75
+            _default:_ ccth = 0.75
 
 * __`funit`__
             
