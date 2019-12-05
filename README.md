@@ -2,14 +2,23 @@
 R-script for paper **CROP: Correlation-based reduction of feature multiplicities in untargeted metabolomic data** (Š. Kouřil, J. de Sousa, J. Václavík, D. Friedecký and T. Adam; *in second review*)
 ***
 
-CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual post-processing tool that removes redundant features from untargeted metabolomic data sets. It is based on a grouping of highly correlated features within a defined retention time window. Graphical representation of correlation network for better understanding of the clusters composition and parameter tuning is provided.
+CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual post-processing tool that removes redundant features from untargeted metabolomic data sets. It is based on a grouping of highly correlated features within a defined retention time window avoiding the condition of specific m/z difference making it a second-tier strategy for multiplicities reduction.
+Graphical representation of correlation network for better understanding of the clusters composition and parameter tuning is provided.
 
 ![CROPped example data - correlation network](Example_correlation_network.PNG)
 ![CROPped example data - correlation network](example_data_CROPped_ccth_0.75_rtw+-0.02_correlation_network.pdf)
 
+After CROPping your data set, you can directly continue with statistical pre-processing and analysis using our package [Metabol](https://github.com/AlzbetaG/Metabol).
 ***
 
-After CROPping your data set, you can directly continue with statistical pre-processing and analysis using our package [Metabol](https://github.com/AlzbetaG/Metabol).
+The user can freely use both mzTab and csv formatted data to be CROPped. 
+
+- **mzTab**: For mzTab input, the CROP function returns data with modified SML table where all multiplicities are assigned to their cluster representatives in `SMF_ID_REFS` column and deleted from the data set. Data from `theoretical_neutral_mass` column are used as labels for the correlation network. Missing values in `abundance_assay` columns of SML table should be imputed before CROPping, otherwise they get treated as zeros when computing correlations. Missing values in `SML_ID`, `SMF_ID_REFS`, `SMF_ID`, and `retention_time_in_seconds/minutes` of SML and SMF table, respectively, result in error since they prevent computing correlations in a given retention time window and/or assigning features to their clusters.
+
+- **csv**: For csv input, the CROP function returns two csv files. The `output_table` stores a modified data set where all multiplicities are assigned to their cluster representant and deleted from the data set. The `list_of_clusters` provides contents of all identified clusters and their chosen representatives. The input table needs to have names/codes of features in the first column, retention time of features in minutes in second column, and peak areas of the samples (can include QCs) after imputation of missing values in the rest of the columns. Column header should contain names/codes of samples. Data from the first column are used as labels for the correlation network.
+
+Please note that in both cases CROP is only usable if the majority of the abundances is filtered out by another preprocessing software first (otherwise many features belonging to different compounds would be connected into the “stretched clusters” due to similar retention times). 
+
 ***
 
 ### Usage
