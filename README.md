@@ -2,7 +2,7 @@
 R-script for paper **CROP: Correlation-based reduction of feature multiplicities in untargeted metabolomic data** (Š. Kouřil, J. de Sousa, J. Václavík, D. Friedecký and T. Adam; *in second review*)
 ***
 
-CROP (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual post-processing tool that removes redundant features from untargeted metabolomic data sets. It is based on a grouping of highly correlated features within a defined retention time window avoiding the condition of specific m/z difference making it a second-tier strategy for multiplicities reduction.
+**CROP** (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual post-processing tool that removes redundant features from untargeted metabolomic data sets. It is based on a grouping of highly correlated features within a defined retention time window avoiding the condition of specific m/z difference making it a second-tier strategy for multiplicities reduction.
 Graphical representation of correlation network for better understanding of the clusters composition and parameter tuning is provided.
 
 ![CROPped example data - correlation network](Example_correlation_network.PNG)
@@ -11,6 +11,7 @@ Graphical representation of correlation network for better understanding of the 
 After CROPping your data set, you can directly continue with statistical pre-processing and analysis using our package [Metabol](https://github.com/AlzbetaG/Metabol).
 ***
 
+### Input data
 The user can freely use both mzTab and csv formatted data to be CROPped. 
 
 - **mzTab**: For mzTab input, the CROP function returns data with modified SML table where all multiplicities are assigned to their cluster representatives in `SMF_ID_REFS` column and deleted from the data set. Data from `theoretical_neutral_mass` column are used as labels for the correlation network. Missing values in `abundance_assay` columns of SML table should be imputed before CROPping, otherwise they get treated as zeros when computing correlations. Missing values in `SML_ID`, `SMF_ID_REFS`, `SMF_ID`, and `retention_time_in_seconds/minutes` of SML and SMF table, respectively, result in error since they prevent computing correlations in a given retention time window and/or assigning features to their clusters.
