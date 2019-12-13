@@ -376,7 +376,10 @@ CROP=function(mscsv, name="", ccth = 0.75, rtw = 0.02, mcs=100, maxrtw = NULL, r
   data=data[,-1] 
   data=t(data)
   
-  if (mztab==FALSE) {rownames(data)=substring(rownames(data), 2)}
+  if (mztab==FALSE) {
+    if (suppressWarnings(anyNA(as.numeric(substring(rownames(data), 2))))==FALSE) {
+      rownames(data)=substring(rownames(data), 2)
+  }}
   
   names(rt_vec)=colnames(data)
   rt_vec=as.data.frame(t(rt_vec))
