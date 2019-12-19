@@ -78,4 +78,4 @@ Please note that in both cases CROP is only usable if the majority of the abunda
             default: rtw = 0.02
 
 ### License
-[GNU General Public License v3,0](LICENSE.md)
+[GNU General Public License v3.0](LICENSE.md)
