@@ -1,6 +1,5 @@
  CROP: Correlation-based reduction of feature multiplicities 
  in untargeted metabolomic data
- 
  Copyright (C) 2019 Julie de Sousa
 
  This program is free software: you can redistribute it and/or modify
