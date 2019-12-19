@@ -6,7 +6,7 @@ R-script for paper **CROP: Correlation-based reduction of feature multiplicities
 Graphical representation of correlation network for better understanding of the clusters composition and parameter tuning is provided.
 
 ![CROPped example data - correlation network](example_data_CROPped_ccth0.75_rtw+-0.02_correlation_network.PNG)
-![CROPped example data - correlation network](example_data_CROPped_ccth0.75_rtw+-0.02_correlation_network.pdf)
+[CROPped example data - correlation network](example_data_CROPped_ccth0.75_rtw+-0.02_correlation_network.pdf)
 
 After CROPping your data set, you can directly continue with statistical pre-processing and analysis using our package [Metabol](https://github.com/AlzbetaG/Metabol).
 ***
