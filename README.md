@@ -76,3 +76,6 @@ Please note that in both cases CROP is only usable if the majority of the abunda
 
             retention time window where +-rtw will be considered
             default: rtw = 0.02
+
+### License
+![GNU GPL v3.0](LICENSE.md)
