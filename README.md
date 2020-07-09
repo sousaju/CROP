@@ -1,5 +1,5 @@
 # CROP
-R-script for paper **CROP: Correlation-based reduction of feature multiplicities in untargeted metabolomic data** (Š. Kouřil, J. de Sousa, J. Václavík, D. Friedecký and T. Adam; *in second review*)
+R-script for paper **CROP: Correlation-based reduction of feature multiplicities in untargeted metabolomic data** (Š. Kouřil, J. de Sousa, J. Václavík, D. Friedecký and T. Adam; 2020; *Bioinformatics 36(9)*; DOI: 10.1093/bioinformatics/btaa012)
 ***
 
 **CROP** (**C**orrelation-based **R**emoval **O**f multi**P**licities) is a visual post-processing tool that removes redundant features from untargeted metabolomic data sets. It is based on a grouping of highly correlated features within a defined retention time window avoiding the condition of specific m/z difference making it a second-tier strategy for multiplicities reduction.
